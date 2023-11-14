@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Dream Travel</title>
+        <link rel="icon" type="image/x-icon" href="dream-travel1.jpg">
+    <link rel= "stylesheet" type = "text/css"
+    href= "headerfooter.css">
+</head>
+<style>
+    body{
+    font-family: roboto,sans-serif;
+    background-image: url(travel.webp);
+    background-position:relative;
+    background-attachment: relative;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    overflow-y:auto;
+    overflow-x:hidden;
+  }
+  .contact{
+    background-color: rgb(255, 255, 255, 0.85);
+    position: relative;
+    top: 260px;
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+    border-radius: 14px;
+    line-height: 2;}
+  .contact a{
+    text-decoration: none;
+    color:black;
+  }
+  .content{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;}
+</style>
+<body>
+    <div class="content">
+    <table class="contact" >
+        <tr><td><img src="map.png" width="15" height="15">ул. Мито Хаџивасилев Јасмин бр. 52/2 1000 Скопје</td></tr>
+        <tr><td><img src="icon2.png" width="15" height="15">Пон-Пет 09h-16h / Саб 10h-14h </td></tr>
+        <tr><td><img src="phone.png" width="15" height="15">+389 76 288 012</td></tr>
+        <tr><td><img src="email2.png" width="20" height="15"><a href = "mailto:dreamtravel@gmail.com">dreamtravel@gmail.com</a></td></tr>
+        <tr><td><img src="web.png"width="13" height="13"><a href="main.html">www.dreamtravel.com.mk</a></td></tr>
+        <tr><td><a href="https://facebook.com"><img src="fb.png"width="40" height="40"></a> <a href="https://instagram.com"><img src="ig.png"width="40" height="40"></a></td></tr>
+    </table>
+</div>
+    <div class="header">
+        <div class="header-upper">
+        <table>
+            <tr>
+                <td></td>
+                <td><img src="telephone.png" width="15" height="15"> +389 76 288 012</td>
+                <td><img src="email.png" width="18" height="13"> dreamtravel@gmail.com</td>   
+                <td><img src="icon.png" width="17" height="15"> Пон-Пет 09h-16h / Саб 10h-14h</td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td><button id="myBtn">Најави се</button>
+                    <div id="myModal" class="modal">
+                      <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p><form>
+                          <h2>Најава за корисници</h2>
+                          <input type="text" placeholder="Email адреса">
+                          <input type="password" placeholder="Лозинка">
+                          <button type="submit">Најави се</button>
+                          <button type="submit">Откажи</button>
+                        </form></p>
+                      </div>
+                     </div>
+                    <script>
+                      var modal = document.getElementById("myModal");
+                  var btn = document.getElementById("myBtn");
+                  var span = document.getElementsByClassName("close")[0];
+                  btn.onclick = function() {
+                    modal.style.display = "block";
+                  }
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                    </script></td>
+            </tr>
+        </table>
+        </div>
+        <div id="logo">
+            <a href = "main.html">
+            <img src="dream-travel.jpg" /></a>
+        </div>
+        <nav>
+            <div id="menu">
+                    <a href="anketa.html">Анкета</a>
+                    <a class="active" href="contact.html">Контакт</a>
+                    <a href="aboutus.html">За нас</a>
+                    <a href="ponudi.html">Понуди</a>
+                    <a href="main.html">Почетна</a>
+                    </div>
+        </nav>
+    </div>
+    <div class="footer">
+        <p>
+        <table  style="width: 150%;" align="center" >
+            <tr>
+                <td align="left">Информации</td>
+                <td align="left">Контакт</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td align="left"><a href="aboutus.html">За нас</a></td>
+                <td align="left"><img src="map.png" width="15" height="15">ул. Мито Хаџивасилев Јасмин бр. 52/2 1000 Скопје</td>
+            </tr>
+            <tr>
+                <td align="left"><a href="opstiuslovi.html">Општи услови</a></td>
+                <td align="left"><img src="email2.png" width="20" height="15"><a href = "mailto:dreamtravel@gmail.com">dreamtravel@gmail.com</a></td>
+            </tr>
+            <tr>
+            <td></td>
+            <td align="left"><img src="phone.png" width="15" height="15">+389 76 288 012</td>
+            </tr>
+        </table>
+        </p>
+        </div>
+    </body>
+</html>

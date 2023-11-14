@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Dream Travel</title>
+        <link rel="icon" type="image/x-icon" href="dream-travel1.jpg">
+    <link rel= "stylesheet" type = "text/css"
+    href= "headerfooter.css">
+</head>
+<style>
+    body{
+    font-family: roboto,sans-serif;
+    background-image: url(travel.webp);
+    background-position:relative;
+    background-attachment: relative;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    overflow-y:auto;
+    overflow-x:hidden;
+  }
+    h1{
+    position: relative;
+    top: 120px;
+    font-size:70px;
+    text-align: left;
+    color:rgb(99, 96, 93);
+    margin-left: 600px;
+    margin-right: 400px; }
+  .anketa{
+    background-color: rgb(255, 255, 255, 0.85);
+    color:black;
+    position: relative;
+    top: 80px;
+    border-radius: 14px;
+    margin-left: 100px;
+    margin-right: 130px;
+    text-align: left;
+    line-height: 1;}
+  .contact a{
+    text-decoration: none;
+    color:black;
+  }
+  .content{
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;}
+</style>
+<body>
+    <div class="content">
+        <h1>Анкета</h1>
+        <table class="anketa">
+            <tr><td colspan="2" align="center" font-weight="bold">Thank you for taking a few minutes to complete this short survey.  We will use this feedback to improve the quality of our tours.</td></tr>
+            <tr><td>Име:</td>
+            <td><input type="text" name="Име"></td></tr>
+            <tr><td>Презиме:</td>
+                <td><input type="text" name="Презиме"></td></tr>
+            <tr><td>Email:</td>
+                <td><input type="text" name="Email"></td></tr>
+                <tr><td>Внесете ја вашата посетена дестинација/дестинации:</td>
+                    <td><input type="text" name="Дестинација"></td></td></tr>
+            <tr><td>Колку бевте задоволни од организацијата на патувањето?</td>
+                <td>
+                <input type="radio" name="question1" value="Многу задоволен"><label>Многу задоволен</label>
+                <input type="radio" name="question1" value="Задоволен"><label>Задоволен</label>
+                <input type="radio" name="question1" value="Делумно задоволен"><label>Делумно задоволен</label>
+                <input type="radio" name="question1" value="Незадоволен"><label>Незадоволен</label>
+                <input type="radio" name="question1" value="Многу незадоволен"><label>Многу незадоволен</label></td></tr>
+            <tr><td>Колку бевте задоволни од тимот на Dream Travel?</td>
+                <td>
+                <input type="radio" name="question2" value="Многу задоволен"><label>Многу задоволен</label>
+                <input type="radio" name="question2" value="Задоволен"><label>Задоволен</label>
+                <input type="radio" name="question2" value="Делумно задоволен"><label>Делумно задоволен</label>
+                <input type="radio" name="question2" value="Незадоволен"><label>Незадоволен</label>
+                <input type="radio" name="question2" value="Многу незадоволен"><label>Многу незадоволен</label></td></tr>
+            <tr><td>Дали повторно би патувале со нашата агенција?</td>
+            <td>
+                <input type="radio" name="question3" value="да"><label>Да</label>
+                <input type="radio" name="question3" value="не"><label>Не</label>
+                <input type="radio" name="question3" value="не знам"><label>Не знам</label></td></tr>
+            <tr><td>Дали би ја препорачале нашата агенција на други?</td>
+                <td>
+                    <input type="radio" name="question4" value="да"><label>Да</label>
+                    <input type="radio" name="question4" value="не"><label>Не</label>
+                    <input type="radio" name="question4" value="не знам"><label>Не знам</label></td></tr>
+                    <tr>
+                        <td colspan="3">
+                        <label>Коментар:</label>
+                        <br>
+                        <textarea cols="170" rows="9" name="коментар"></textarea>
+                        </td></tr>
+            <tr><td align="right" colspan="2"><input type="submit" value="Submit"></td></tr>
+        </table>
+    </div>
+    <div class="header">
+        <div class="header-upper">
+        <table>
+            <tr>
+                <td></td>
+                <td><img src="telephone.png" width="15" height="15"> +389 76 288 012</td>
+                <td><img src="email.png" width="18" height="13"> dreamtravel@gmail.com</td>   
+                <td><img src="icon.png" width="17" height="15"> Пон-Пет 09h-16h / Саб 10h-14h</td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td><button id="myBtn">Најави се</button>
+                    <div id="myModal" class="modal">
+                      <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p><form>
+                          <h2>Најава за корисници</h2>
+                          <input type="text" placeholder="Email адреса">
+                          <input type="password" placeholder="Лозинка">
+                          <button type="submit">Најави се</button>
+                          <button type="submit">Откажи</button>
+                        </form></p>
+                      </div>
+                     </div>
+                    <script>
+                      var modal = document.getElementById("myModal");
+                  var btn = document.getElementById("myBtn");
+                  var span = document.getElementsByClassName("close")[0];
+                  btn.onclick = function() {
+                    modal.style.display = "block";
+                  }
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                    </script></td>
+            </tr>
+        </table>
+        </div>
+        <div id="logo">
+            <a href = "main.html">
+            <img src="dream-travel.jpg" /></a>
+        </div>
+        <nav>
+            <div id="menu">
+                    <a class="active" href="anketa.html">Анкета</a>
+                    <a href="contact.html">Контакт</a>
+                    <a href="aboutus.html">За нас</a>
+                    <a href="ponudi.html">Понуди</a>
+                    <a href="main.html">Почетна</a>
+                    </div>
+        </nav>
+    </div>
+    <div class="footer">
+        <p>
+        <table  style="width: 150%;" align="center" >
+            <tr>
+                <td align="left">Информации</td>
+                <td align="left">Контакт</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td align="left"><a href="aboutus.html">За нас</a></td>
+                <td align="left"><img src="map.png" width="15" height="15">ул. Мито Хаџивасилев Јасмин бр. 52/2 1000 Скопје</td>
+            </tr>
+            <tr>
+                <td align="left"><a href="opstiuslovi.html">Општи услови</a></td>
+                <td align="left"><img src="email2.png" width="20" height="15"><a href = "mailto:dreamtravel@gmail.com">dreamtravel@gmail.com</a></td>
+            </tr>
+            <tr>
+            <td></td>
+            <td align="left"><img src="phone.png" width="15" height="15">+389 76 288 012</td>
+            </tr>
+        </table>
+        </p>
+        </div>
+    </body>
+</html>

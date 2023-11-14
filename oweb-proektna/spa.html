@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Dream Travel</title>
+        <link rel="icon" type="image/x-icon" href="dream-travel1.jpg">
+    <link rel= "stylesheet" type = "text/css"
+    href= "headerfooter.css">
+</head>
+<style>
+* {box-sizing: border-box}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+position: absolute;
+  bottom:8px;
+  width:98%;
+  color: white;
+  font-size: 20px;
+  transition: .5s ease;
+  opacity:0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+}
+.column:hover .overlay {
+  opacity: 1;
+}
+ body{
+    font-family: roboto,sans-serif;
+    background-image: url(spa1.jpg);
+    background-position:relative;
+    background-attachment: relative;
+    background-repeat:no-repeat;
+    overflow-y:auto;
+    overflow-x:hidden;
+    
+  }
+  h1{
+margin-top: 330px;
+font-size: 50px;
+color:rgb(255, 255, 255);
+margin-right:920px; }
+  .content{
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+    }
+ 
+ .row {
+  display: flex;
+}
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  position: relative;
+  margin-top:30px ;
+  width: 100%;}
+.column a{
+    text-decoration: none;
+    color:white;}
+.top-right {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(249, 146, 1);
+  border: 10px white;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+    padding: 10px;
+  color:white;}
+</style>
+<body>
+    <div class="content">
+        <h1>Спа и Бањи</h1>
+        <div class="row">
+          <div class="column">
+            <img src="zlatibor.jpg" style="width:100%">
+            <a href="zlatibor.html"><div class="overlay">Дознај повеќе</a></div>
+            <div class="top-right ">Златибор, Србија</div>
+        </div>
+            <div class="column">
+             <img src="sandanski.jpg" style="width:100%" >
+             <a href="sandanski.html"><div class="overlay">Дознај повеќе</a></div>
+             <div class="top-right ">Сандански, Бугарија</div>
+            </div>
+          <div class="column">
+              <img src="banja.jpg" style="width:100%">
+              <a href="vrnjackabanja.html"><div class="overlay">Дознај повеќе</a></div>
+              <div class="top-right ">Врњачка Бања, Србија</div>
+          </div>
+            </div>
+</div>
+<div class="header">
+    <div class="header-upper">
+    <table>
+        <tr>
+            <td></td>
+            <td><img src="telephone.png" width="15" height="15"> +389 76 288 012</td>
+            <td><img src="email.png" width="18" height="13"> dreamtravel@gmail.com</td>   
+            <td><img src="icon.png" width="17" height="15"> Пон-Пет 09h-16h / Саб 10h-14h</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td>Најави се</td>
+        </tr>
+    </table>
+    </div>
+    <div id="logo">
+        <a href = "main.html">
+        <img src="dream-travel.jpg" /></a>
+    </div>
+    <nav><div id="menu">
+        <a href="anketa.html">Анкета</a>
+        <a href="contact.html">Контакт</a>
+        <a href="aboutus.html">За нас</a>
+        <a class="active" href="ponudi.html">Понуди</a>
+        <a href="main.html">Почетна</a>
+        </div>
+</nav>
+</div>
+<hr>
+<div class="footer">
+<p>
+<table  style="width: 150%;" align="center" >
+<tr>
+    <td align="left">Информации</td>
+    <td align="left">Контакт</td>
+</tr>
+<tr></tr>
+<tr>
+    <td align="left"><a href="aboutus.html">За нас</a></td>
+    <td align="left"><img src="map.png" width="15" height="15">ул. Мито Хаџивасилев Јасмин бр. 52/2 1000 Скопје</td>
+</tr>
+<tr>
+    <td align="left"><a href="opstiuslovi.html">Општи услови</a></td>
+    <td align="left"><img src="email2.png" width="20" height="15"><a href = "mailto:dreamtravel@gmail.com">dreamtravel@gmail.com</a></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"><img src="phone.png" width="15" height="15">+389 76 288 012</td>
+</tr>
+</table>
+</p>
+</div>
+</body>
+</html>

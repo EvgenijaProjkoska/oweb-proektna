@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Dream Travel</title>
+        <link rel="icon" type="image/x-icon" href="dream-travel1.jpg">
+    <link rel= "stylesheet" type = "text/css"
+    href= "headerfooter.css">
+    
+</head>
+<style>
+     body{
+    font-family: roboto,sans-serif;
+    background-image: url(crop3.jpg);
+    background-position:relative;
+    background-attachment: relative;
+    background-repeat:no-repeat;
+    overflow-y:auto;
+    overflow-x:hidden;
+    }
+    .content{
+    position:relative;
+    padding-top:420px;
+    overflow:auto;
+    text-align: left;
+    max-width: 700px;
+    margin-left:40px;
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    text-align: justify;
+    color:rgb(99, 96, 93);
+    }
+    h1{
+    background-color: rgb(255, 255, 255, 0.7);
+    max-width: 150px;
+    font-weight: bold;
+    font-size:30px;
+    }
+</style>
+<body>
+    <div class="content">
+        <h1>За нас</h1>
+        <p>Dream Travel е туристичка агенција основана во 2006 година која поседува А лиценца за вршење на туристичка дејност и е членка на СКТМ (Стопанска комора за туризам на Македонија, како дел од управен одбор). Нашиот тим денес брои 30 професионални туристички работници кои во секој момент се подготвени да го испланираат и организираат вашето патување.</p>
+        <p>Опсегот на услуги кои ги нудиме е обемен и континуирано се зголемува, земајќи ги во предвид побарувањата на нашите клиенти и соработници. Нудиме комплетен туристички сервис: туристички аранжмани ( сопствен закуп за летен одмор, сопствен закуп за зимски одмор, чартер програма за Египет и Турција), хотелски резервации, авио карти, посредување за визи, организирање на индивидуални и групни патувања, рент а кар, трансфери, организација на семинари и конференции. Ориентирајќи се кон тоа да обезбедиме што поширок спектар на туристички услуги, Dream Travel постојано инвестира во квалитетен персонал и адекватни технологии, кои се неопходни. Минатата година за прв пат во Македонија воведовме целосно онлајн резервирање и онлајн плаќање на аранжмани, а пред 5 години лансиравме Б2Б платформа која беше наменета за ОНЛАЈН резервации за партнерските туристички агенции кои ги продаваат нашите аранжмани. Преку оваа платформа веќе имаме продадено повеќе од 15.000 аранжмани. За авионскиот сектор имаме стручни и лиценцирани лица за Amadeus, Galileo и Sabre.Членки на IATA. Сите вработени во споменатиот сектор, се спремни да ви ги понудат најдобрите опции за вашите летови, за чија резервација, цена и ред на летање можете брзо и едноставно да се информирате во туристичката агенција.</p>
+        <p style="font-weight:bold;">Нашата цел е луѓето да бидат задоволни од патувањето кое ќе го одберат и тоа за нив да биде една незаборавна авантура.</p>
+      </div>
+    <div class="header">
+        <div class="header-upper">
+        <table>
+            <tr>
+                <td></td>
+                <td><img src="telephone.png" width="15" height="15"> +389 76 288 012</td>
+                <td><img src="email.png" width="18" height="13"> dreamtravel@gmail.com</td>   
+                <td><img src="icon.png" width="17" height="15"> Пон-Пет 09h-16h / Саб 10h-14h</td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td><button id="myBtn">Најави се</button>
+                    <div id="myModal" class="modal">
+                      <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p><form>
+                          <h2>Најава за корисници</h2>
+                          <input type="text" placeholder="Email адреса">
+                          <input type="password" placeholder="Лозинка">
+                          <button type="submit">Најави се</button>
+                          <button type="submit">Откажи</button>
+                        </form></p>
+                      </div>
+                     </div>
+                    <script>
+                      var modal = document.getElementById("myModal");
+                  var btn = document.getElementById("myBtn");
+                  var span = document.getElementsByClassName("close")[0];
+                  btn.onclick = function() {
+                    modal.style.display = "block";
+                  }
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                    </script></td>
+            </tr>
+        </table>
+        </div>
+        <div id="logo">
+            <a href = "main.html">
+            <img src="dream-travel.jpg" /></a>
+        </div>
+        <nav>
+            <div id="menu">
+                    <a href="anketa.html">Анкета</a>
+                    <a  href="contact.html">Контакт</a>
+                    <a class="active" href="aboutus.html">За нас</a>
+                    <a href="ponudi.html">Понуди</a>
+                    <a href="main.html">Почетна</a>
+                    </div>
+        </nav>
+    </div>
+    <hr>
+    <div class="footer">
+        <p>
+        <table  style="width: 150%;" align="center" >
+            <tr>
+                <td align="left">Информации</td>
+                <td align="left">Контакт</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td align="left"><a href="aboutus.html">За нас</a></td>
+                <td align="left"><img src="map.png" width="15" height="15">ул. Мито Хаџивасилев Јасмин бр. 52/2 1000 Скопје</td>
+            </tr>
+            <tr>
+                <td align="left"><a href="opstiuslovi.html">Општи услови</a></td>
+                <td align="left"><img src="email2.png" width="20" height="15"><a href = "mailto:dreamtravel@gmail.com">dreamtravel@gmail.com</a></td>
+            </tr>
+            <tr>
+            <td></td>
+            <td align="left"><img src="phone.png" width="15" height="15">+389 76 288 012</td>
+            </tr>
+        </table>
+        </p>
+        </div>
+</body>
+</html>
